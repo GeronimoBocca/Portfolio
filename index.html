@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Ger<span>ó</span>nimo</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="nav__socials">
+                <a href="https://www.linkedin.com/in/geronimo-bocca/" target="_blank" class="nav__social-link">
+                    <i class="devicon-linkedin-plain"></i>
+                </a>
+                <a href="https://github.com/GeronimoBocca" target="_blank" class="nav__social-link">
+                    <i class="devicon-github-original"></i>
+                </a>
+            </div>
+            <div class="nav__btns">
+                <a href="./src/imgs/Gerónimo Bocca Enriquez.pdf" target="_blank" class="nav__link-btn btn">CV</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <span class="home__subtitle">Welcome to my Portfolio</span>
+                    <h1 class="home__title">Hi, I'm Gerónimo, <span>Frontend Developer</span>
+                        <br> based in Uruguay.
+                    </h1>
+                </div>
+                <img src="./src/imgs/home.jpg" class="home__img" alt="">
+
+            </div>
+
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <img src="./src/imgs/IMG_20221109_121149-removebg-preview (6) (1).png" class="about__img" alt="">
+
+                <div class="about__content">
+                    <h2 class="section__title">About Me</h2>
+                    <p class="about__description">I am a passionate and enthusiastic junior front-end developer with a
+                        strong desire to learn and grow in the field of web programming. I have created personal
+                        projects to apply my knowledge and strengthen my practical understanding. These projects have
+                        allowed me to explore different aspects of front-end development, from creating attractive and
+                        responsive user interfaces to implementing interactive functionalities.</p>
+
+                    <div class="tabs__btns">
+                        <span class="tabs__btn tab__active" data-target="#skills">Main Skills</span>
+                        <span class="tabs__btn" data-target="#tools">Tools</span>
+                    </div>
+
+                    <div class="tabs__content">
+                        <div class="tabs__item tab__active" data-content id="skills">
+                            <div class="tabs__data grid">
+                                <div class="services__container container grid">
+                                    <div class="services__item">
+                                        <i class="devicon-html5-plain"></i>
+                                        <h3 class="services__title">HTML</h3>
+                                    </div>
+                                    <div class="services__item">
+                                        <i class="devicon-css3-plain"></i>
+                                        <h3 class="services__title">CSS</h3>
+                                    </div>
+                                    <div class="services__item">
+
+                                        <i class="devicon-javascript-plain"></i>
+
+                                        <h3 class="services__title">JS</h3>
+                                    </div>
+                                    <div class="services__item">
+                                        <i class="devicon-angularjs-plain"></i>
+
+                                        <h3 class="services__title">Angular</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" data-content id="tools">
+                            <div class="tabs__data grid">
+                                <div class="services__container container grid">
+                                    <div class="services__item">
+                                        <i class="devicon-git-plain"></i>
+                                        <h3 class="services__title">Git</h3>
+                                    </div>
+                                    <div class="services__item">
+                                        <i class="devicon-github-original"></i>
+                                        <h3 class="services__title">GitHub</h3>
+                                    </div>
+                                    <div class="services__item">
+
+                                        <i class="devicon-vscode-plain"></i>
+
+                                        <h3 class="services__title">VsCode</h3>
+                                    </div>
+                                    <div class="services__item">
+                                        <i class="devicon-bootstrap-plain"></i>
+                                        <h3 class="services__title">Bootstrap</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">My Lastests Projects</h2>
+            <p class="section__description">Check out some of my lastest Projects</p>
+
+            <div class="porfolio__container container grid">
+                <div class="porfolio__item">
+                    <img src="./src/imgs/WhatsApp_Image_2023-06-01_at_15_35_49-transformed.jpeg" alt="">
+                    <h3 class="porfolio__title">CommerceWave</h3>
+                    <p class="porfolio__description">Explore CommerceWave today and immerse yourself in an exciting and
+                        convenient shopping experience! No matter what you're looking for, we are here to help you find
+                        it and provide you with an unforgettable shopping experience. Your satisfaction is our priority
+                        at CommerceWave!</p>
+                    <a href="https://geronimobocca.github.io/E-Commerce-JaP/" target="_blank" class="btn btn__outline">Live demo</a> <a href="https://github.com/GeronimoBocca/E-Commerce-JaP" target="_blank" class="btn btn__outline__2">Code</a>
+                </div>
+                <div class="porfolio__item">
+                    <img src="./src/imgs/WhatsApp_Image_2023-06-01_at_15_35_49-transformed.jpeg" alt="">
+                    <h3 class="porfolio__title">CommerceWave</h3>
+                    <p class="porfolio__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
+                        vitae. Nesciunt, distinctio, cumque asperiores at facilis unde non rem et ducimus qui autem
+                        dicta quae sed nobis ipsam. Tempore, itaque.</p>
+                        <a href="https://geronimobocca.github.io/E-Commerce-JaP/" target="_blank" class="btn btn__outline">Live demo</a> <a href="" class="btn btn__outline__2">Code</a>
+                </div>
+                <div class="porfolio__item">
+                    <img src="./src/imgs/WhatsApp_Image_2023-06-01_at_15_35_49-transformed.jpeg" alt="">
+                    <h3 class="porfolio__title">CommerceWave</h3>
+                    <p class="porfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                        blanditiis exercitationem optio sed, aliquam cum sunt ullam! Eaque provident ratione iure id
+                        excepturi eius nisi, error, commodi, dignissimos exercitationem dolores?</p>
+                        <a href="https://geronimobocca.github.io/E-Commerce-JaP/" target="_blank" class="btn btn__outline">Live demo</a> <a href="" class="btn btn__outline__2">Code</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h2 class="section__title">Lets talk!</h2>
+                    <p class="contact__description">
+                        Connect with me via phone:
+                        <a href="tel:+59895303484">Call me</a> or email: <a href="mailto:geronimobocca22@gmail.com">Mail
+                            me</a>
+                    </p>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <p class="error__message" id="error-message"></p>
+
+                        <div class="contact__form-input">
+                            <input type="text" name="name" placeholder="John Doe" id="contact-name"
+                                class="contact__input">
+                        </div>
+                        <div class="contact__form-input">
+                            <input type="text" name="email" placeholder="johndoe@example.com" id="contact-email"
+                                class="contact__input">
+                        </div>
+                        <div class="contact__form-input">
+                            <input type="text" name="subject" placeholder="Write a Subject" id="contact-subject"
+                                class="contact__input">
+                        </div>
+                        <div class="contact__form-input">
+                            <textarea name="message" id="contact-message" class="contact__input textarea"
+                                placeholder="Write a message"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="btn">
+
+
+                    </form>
+                </div>
+
+                <img class="contact__image" src="./src/imgs/email-removebg-preview (2).png" alt="">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container container grid">
+                <a href="index.html" class="footer__logo">Ger<span>ó</span>nimo</a>
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/geronimo-bocca/" target="_blank" class="footer__social-link">
+                        <i class="devicon-linkedin-plain"></i>
+                    </a>
+                    <a href="https://github.com/GeronimoBocca" target="_blank" class="footer__social-link">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                </div>
+                <p class="footer__hire">Hire me!</p>
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up scrollup__icon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+              </svg>
+        </a>
+
+    </main>
+
+
+
+    <script src="./src/scripts/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</body>
+
+</html>
